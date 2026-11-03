@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: lightseagreen;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 1.3rem;
+}
+
+header .greeting {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+header span {
+  font-size: .9rem;
+}
+
+header, main {
+  padding: 20px 40px;
+}
+
+main h1 {
+  padding-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+select {
+  padding: 10px;
+  border: 2px solid rgb(112, 112, 112);
+  border-radius: 5px;
+}
+
+.topContainer {
+  margin: 20px 0;
+}
+
+/* Loading Spinner */
+
+.preloader {
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 8px solid rgb(202, 202, 202);
+  border-block-start: 8px solid lightseagreen;
+  animation: spinner 2s infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Card */
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  border: 3px solid lightseagreen;
+  border-radius: 10px;
+  padding: 30px 30px 20px 30px; /* 20px de padding-bottom pq o último p tag já tem 10px */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 45%;
+}
+
+.card p {
+  padding-bottom: 10px;
+}
+
+.card span {
+  font-weight: bold;
+}
+
+.card button {
+  border: none;
+  border-radius: 10px;
+  background-color: lightseagreen;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s; /* se colocar só no :hover, qd afastar o rato do botão, a transição não é suave */
+}
+
+.card button:hover {
+  box-shadow: 0px 0px 10px rgb(202, 202, 202);
+  transform: translateY(-2px);
+}
+
+.card div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+@media(max-width: 1000px) {
+
+  .card {
+    width: 60%;
+  }
+
+}
+
+@media(max-width: 780px) {
+
+  .card {
+    width: 70%;
+  }
+
+}
+
+@media(max-width: 564px) {
+
+  .card {
+    width: 60%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}
+
+@media(max-width: 480px) {
+
+  .card {
+    width: 80%;
+  }
+
+}
+
+@media(max-width: 358px) {
+
+  .card {
+    font-size: .95rem;
+  }
+
+}
+
+@media(max-width: 348px) {
+
+  .card {
+    width: 100%;
+    padding: 10px;
+  }
+
+}
