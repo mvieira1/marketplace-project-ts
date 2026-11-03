@@ -23,6 +23,9 @@ npm run dev
 5. Open http://localhost:5173/ in your browser!
 
 6. Bonito Serviço! 😄
+<br><br>
+<img width="1335" height="605" alt="image" src="https://github.com/user-attachments/assets/ef4239f5-f8c2-4d9f-8b8e-2f94149966d2" />
+
 
 *To be improved: styling and responsiveness*
 
