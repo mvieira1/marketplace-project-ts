@@ -24,7 +24,7 @@ npm run dev
 
 6. Bonito Serviço! 😄
 <br><br>
-<img width="1335" height="605" alt="image" src="https://github.com/user-attachments/assets/ef4239f5-f8c2-4d9f-8b8e-2f94149966d2" />
+<img width="1337" height="602" alt="image" src="https://github.com/user-attachments/assets/9550c98b-c025-4173-b68d-49637aaa87a7" />
 
 
 *To be improved: styling and responsiveness*
