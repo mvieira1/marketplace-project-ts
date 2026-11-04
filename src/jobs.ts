@@ -51,7 +51,7 @@ const jobs: Job[] = [
         service: "Eletricidade",
         city: "Setúbal",
         startsAt: "2026-11-14T11:00:00Z",
-        durationMin: 60,
+        durationMin: 105,
         priceCents: 5500,
         urgent: false
     },
@@ -69,7 +69,7 @@ const jobs: Job[] = [
         service: "Canalização",
         city: "Braga",
         startsAt: "2026-11-15T14:00:00Z",
-        durationMin: 90,
+        durationMin: 20,
         priceCents: 6500,
         urgent: true
     },
