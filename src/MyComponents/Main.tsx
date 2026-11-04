@@ -71,9 +71,9 @@ const Main = (): JSX.Element => {
                 <select name="filterByCity" id="filterByCity-id" onChange={handleChange}>
 
                     {
-                        options.map((object, i) => {
+                        options.map(object => {
                             return (
-                                <option value={object.value} key={i}>{object.label}</option>
+                                <option value={object.value} key={object.value}>{object.label}</option>
                             )
                         })
                     }
