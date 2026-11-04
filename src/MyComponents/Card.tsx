@@ -9,7 +9,7 @@ type CardProps = {
 
 const Card = (props: CardProps): JSX.Element => {
 
-    const {service, city, startsAt, durationMin, priceCents, urgent} = props.job;
+    const {id, service, city, startsAt, durationMin, priceCents, urgent} = props.job;
 
     const d = new Date(startsAt);
     const convertedDate = d.toLocaleString("pt-PT", {dateStyle: "short", timeStyle: "short"});
@@ -29,7 +29,7 @@ const Card = (props: CardProps): JSX.Element => {
 
             <div>
                 {urgent && <img src="src/assets/urgent-icon.svg" alt="urgent" width={"40px"}/>}
-                <button onClick={() => handleClick(props.job.id)}>Aceitar</button>
+                <button onClick={() => handleClick(id)}>Aceitar</button>
             </div>
             
         </article>
