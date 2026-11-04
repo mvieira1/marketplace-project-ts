@@ -14,6 +14,23 @@ const Card = (props: CardProps): JSX.Element => {
     const d = new Date(startsAt);
     const convertedDate = d.toLocaleString("pt-PT", {dateStyle: "short", timeStyle: "short"});
 
+    const convertTime = (durationMin: number): string => {
+        const hours = Math.floor(durationMin / 60);
+        const minutes = durationMin % 60;
+
+        if (hours === 0) {
+            return `${minutes} min`;
+        };
+
+        if (minutes === 0) {
+            return `${hours} h`;
+        };
+
+        return `${hours}h${minutes}`;
+    };
+
+    const convertedTime = convertTime(durationMin);
+
     const handleClick = props.handleClickFunction;
 
     return (
@@ -23,7 +40,7 @@ const Card = (props: CardProps): JSX.Element => {
                 <p><span>Serviço:</span> {service}</p>
                 <p><span>Cidade:</span> {city}</p>
                 <p><span>Data:</span> {convertedDate}</p>
-                <p><span>Duração:</span> {durationMin / 60} h</p>
+                <p><span>Duração:</span> {convertedTime}</p>
                 <p><span>Preço:</span> {priceCents / 100} €</p>
             </section>
 
